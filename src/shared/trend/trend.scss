@@ -1,0 +1,32 @@
+.trend {
+  height: 376px;
+  position: relative;
+  overflow: hidden;
+}
+.trend__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+[class^="trend__content"] {
+  position: absolute;
+  background-color: black;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 65px;
+  padding: 10px 20px 10px 20px;
+  color: #ffffff;
+}
+.trend__content--left {
+  bottom: 20%;
+  left: 10%;
+}
+.trend__content--center {
+  top: 35%;
+  left: 8%;
+}
+.trend__content--right {
+  top: 20%;
+  right: 10%;
+}

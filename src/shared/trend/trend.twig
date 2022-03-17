@@ -1,0 +1,8 @@
+{% macro render(data) %}
+  <div class="trend">
+    <img class="trend__img" src={{data.srcImg}} alt="trend">
+    <div class="trend__content--{{data.type}}">
+      <div>{{data.name}}</div>
+    </div>
+  </div>
+{% endmacro %}

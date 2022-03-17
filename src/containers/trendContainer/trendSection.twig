@@ -1,0 +1,14 @@
+{% import "../../shared/trend/trend.twig" as trend %}
+
+<section class="page-section--small">
+  <div class="container">
+  <h3 class="page-section__header">New Arrivals</h3>
+    <div class="row">
+      {% for item in trendSection %}
+        <div class="col-lg-4">
+          {{trend.render(item)}}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
