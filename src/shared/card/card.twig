@@ -3,28 +3,38 @@
     <div class="card__img">
       <img src={{product.srcImg}} alt="product">
       <div class="card__add">
-        <a href="#" onclick="hienLink()">ADD TO CART</a>
+        <a href="#">ADD TO CART</a>
       </div>
       <div class="card__status">
         <div class="card__icon-bg">
           <i class="far fa-heart"></i>
         </div>
-        <div class="card__icon-bg">
+        <div class="card__icon-bg--hidden">
           <i class="far fa-eye"></i>
         </div>
-        <div class="card__icon-bg">
-          <i class="far fa-exchange"></i>
+        <div class="card__icon-bg--hidden">
+          <i class="fa-solid fa-right-left"></i>
         </div>
       </div>
     </div>
     <div class="card__content">
-      <div class="card__band">Wiloke</div>
-      <h4 class="card__name">{{product.name}}</h4>
-      <div class="card__cost">{{product.cost}}</div>
+      <div class="card__band">WILOKE</div>
+      <div class="card__name">{{product.name}}</div>
+      <div class="card__cost">
+       {{product.cost}}
+       {% if product.costBefore %}
+          <span class="card__cost--before">{{product.costBefore}}</span>
+       {% endif %}
+      </div>
       <div class="card__color">
-        <div class="circle--red"></div>
-        <div class="circle--blue"></div>
-        <div class="circle--yellow"></div>
+        {% if product.color %}
+          {% for item in product.color %}
+            <div class="circle--{{item.name}}"></div>
+          {% endfor %}
+          {% if product.color.length >= 4 %}
+            <div class="circle--plus">+1</div>
+          {% endif %}
+        {% endif %}
       </div>
     </div>
   </div>

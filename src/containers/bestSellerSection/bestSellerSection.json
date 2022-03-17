@@ -3,22 +3,78 @@
     {
       "name" :"Abc Shoulder Bag",
       "srcImg": "../../img/product1.png",
-      "cost": "$25.00"
+      "cost": "$25.00",
+      "costBefore": "$35.00",
+      "color": [
+        {
+          "name":"yellow"
+        },
+        {
+          "name":"blue"
+        },
+        {
+          "name":"violet"
+        }
+      ]
     },
     {
-      "name" :"Abc Shoulder Bag",
+      "name" :"Quilted Shoulder Bag",
       "srcImg": "../../img/product2.png",
-      "cost": "$25.00"
+      "cost": "$25.00",
+      "costBefore": "$35.00",
+      "color": [
+        {
+          "name":"yellow"
+        },
+        {
+          "name":"blue"
+        },
+        {
+          "name":"violet"
+        },
+        {
+          "name":"violet"
+        }
+      ]
     },
     {
-      "name" :"Abc Shoulder Bag",
+      "name" :"Denim Jacket",
       "srcImg": "../../img/product3.png",
-      "cost": "$25.00"
+      "cost": "$30.00",
+      "color": [
+        {
+          "name":"yellow"
+        },
+        {
+          "name":"blue"
+        },
+        {
+          "name":"violet"
+        },
+        {
+          "name":"violet"
+        }
+      ]
     },
     {
-      "name" :"Abc Shoulder Bag",
+      "name" :"Wool-blend Jacket",
       "srcImg": "../../img/product4.png",
-      "cost": "$25.00"
+      "cost": "$25.00",
+      "costBefore": "$35.00",
+      "color": [
+        {
+          "name":"yellow"
+        },
+        {
+          "name":"blue"
+        },
+        {
+          "name":"violet"
+        },
+        {
+          "name":"violet"
+        }
+      ]
     }
   ]
 

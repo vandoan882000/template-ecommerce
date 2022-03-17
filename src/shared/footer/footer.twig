@@ -1,0 +1,28 @@
+{% macro render(data) %}
+	{% if data.title %}
+		<div class="footer__title">{{data.title}}</div>
+	{% endif %}
+	{% if data.heading %}
+		<div class="footer__heading">{{data.heading}}</div>
+	{% endif %}
+	{% for item in data.content %}
+		<div class="footer__content">{{item.name}}</div>
+	{% endfor %}
+	{% if data.input %}
+		<div class="footer__input">
+			<input placeholder="Email address" type="text">
+			<div class="btn-join">
+				<div>Join</div>
+			</div>
+		</div>
+	{% endif %}
+  {% if data.icon %}
+    <div class="footer__about">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-wordpress"></i>
+    </div>
+  {% endif %}
+{% endmacro %}

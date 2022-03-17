@@ -1,0 +1,12 @@
+{% import "../../shared/footer/footer.twig" as footer %}
+<footer>
+  <div class="container">
+    <div class="row">
+      {% for item in footerSection %}
+        <div class="col-lg-3">
+          {{footer.render(item)}}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</footer>

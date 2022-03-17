@@ -5,31 +5,31 @@
       "srcImg": "../../img/category1.png"
     },
     {
-      "name" :"Activewear",
+      "name" :"Hoodies & Sweatshirts",
       "srcImg": "../../img/category2.png"
     },
     {
-      "name" :"Activewear",
+      "name" :"Coats & Jackets",
       "srcImg": "../../img/category3.png"
     },
     {
-      "name" :"Activewear",
+      "name" :"Dresses",
       "srcImg": "../../img/category4.png"
     },
     {
-      "name" :"Activewear",
+      "name" :"Sweatshirt Short",
       "srcImg": "../../img/category5.png"
     },
     {
-      "name" :"Activewear",
+      "name" :"Jeans",
       "srcImg": "../../img/category6.png"
     },
     {
-      "name" :"Activewear",
+      "name" :"Skirts & Tops",
       "srcImg": "../../img/category7.png"
     },
     {
-      "name" :"Activewear",
+      "name" :"Bikinis & Swimsuits",
       "srcImg": "../../img/category8.png"
     }
   ]

@@ -1,5 +1,6 @@
 .card {
   padding: 15px;
+  cursor: pointer;
 }
 .card__img {
   position: relative;
@@ -15,16 +16,21 @@
   width: 35px;
   height: 127px;
 }
-.card__icon-bg {
+[class^="card__icon-bg"] {
   position: relative;
   width: 30px;
   height: 30px;
   border-radius: 15px;
   background-color: white;
   margin-bottom: 10px;
-
 }
-.card__icon-bg .far{
+.card__icon-bg--hidden {
+  visibility: hidden;
+}
+.card:hover .card__status .card__icon-bg--hidden {
+  visibility: visible;
+}
+[class^="card__icon-bg"] i{
   font-size: 14px;
   position: absolute;
   top: 50%;
@@ -42,7 +48,42 @@
   transform: translateY(50px);
   transition: all 0.5s;
   text-align: center;
-
+  letter-spacing: 0.15px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+}
+.card__band {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #929292;
+}
+.card__name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.15px;
+}
+.card__cost {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  color: #AF0707;
+}
+.card__cost--before {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  color: #9E9E9E;
+  text-decoration: line-through;
 }
 .card:hover .card__add {
   transform: translateY(0);
@@ -75,12 +116,16 @@
   margin: 10px 6px 0px 6px;
   cursor: pointer;
 }
-.circle--red {
-  background-color: red;
+.circle--violet {
+  background-color: violet;
 }
 .circle--blue {
   background-color: blue;
 }
 .circle--yellow {
   background-color: yellow;
+}
+.circle--plus {
+  font-weight: 600;
+  font-size: 12px;
 }

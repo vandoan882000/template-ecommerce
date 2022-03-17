@@ -1,0 +1,79 @@
+footer {
+  height: 435px;
+  background-color: black;
+  padding: 60px;
+}
+footer {
+  color: white;
+}
+.footer__title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 46px;
+  padding-bottom: 20px;
+}
+.footer__heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.footer__content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.7;
+  padding-bottom: 20px;
+}
+
+
+.footer__input {
+  display: flex;
+  width: 236px;
+  height: 40px;
+  color: black;
+  border: none;
+}
+.footer__input input {
+  width: 162px;
+  height: 38px;
+  line-height: 36px;
+  border: none;
+  outline: none;
+  display: inline-block;
+}
+.btn-join {
+  width: 73px;
+  height: 38px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #3540DF;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.btn-join div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.footer__about {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer__about [class^="fa"] {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #030C23;
+  cursor: pointer;
+  font-size: 18px;
+}
+.footer__about [class^="fa"]:hover {
+  color: #ffffff;
+}

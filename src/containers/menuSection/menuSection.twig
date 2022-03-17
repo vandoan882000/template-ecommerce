@@ -2,8 +2,10 @@
 
 <nav class="nav">
   <div class="container" >
-    <div class="row">
-      {{menu.render()}}
-    </div>
+    {% for item in menuSection %}
+      <div class="row" style="background-color: {{item.bgColor}}">
+        {{menu.render(item)}}
+      </div>
+    {% endfor %}
   </div>
 </nav>

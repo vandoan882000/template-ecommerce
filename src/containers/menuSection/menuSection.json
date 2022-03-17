@@ -1,5 +1,8 @@
-{
-  "menu1": {
+[
+  {
+    "name" : "menu1",
+    "bgColor": "#000000",
+    "color": "#FFFFFF",
     "list": [
       {
         "name" :"LOGO",
@@ -21,7 +24,40 @@
         "name" :"GLASSY",
         "href": "#"
       }
-    ]
+    ],
+    "type": "option"
+  },
+  {
+    "name" : "menu2",
+    "bgColor" : "#FFFFFF",
+    "color": "#000000",
+    "list": [
+      {
+        "name" :"HOME",
+        "href": "#"
+      },
+      {
+        "name" :"PRODUCT",
+        "href": "#"
+      },
+      {
+        "name" :"BLOG",
+        "href": "#"
+      },
+      {
+        "name" :"TREND",
+        "href": "#"
+      },
+      {
+        "name" :"NEW IN",
+        "href": "#"
+      },
+      {
+        "name" :"BULK EDITOR",
+        "href": "#"
+      }
+    ],
+    "type": "search"
   }
 
-}
+]

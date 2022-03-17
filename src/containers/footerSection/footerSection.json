@@ -1,0 +1,72 @@
+[
+  {
+    "title": "LOGO",
+    "content":
+    [
+      {
+        "name": "Call Us: +123-456-7890"
+      },
+      {
+        "name": "Info@example.com"
+      },
+      {
+        "name": "Monday till Friday 10 to 6 EST"
+      }
+    ]
+  },
+  {
+    "heading": "Customer",
+    "content":
+    [
+      {
+        "name": "Customer Service"
+      },
+      {
+        "name": "Shipping and Delivery"
+      },
+      {
+        "name": "Size Charts"
+      },
+      {
+        "name": "Email Signup"
+      }
+    ]
+  },
+  {
+    "heading": "Our Shop",
+    "content":
+    [
+      {
+        "name": "New Arrivals"
+      },
+      {
+        "name": "Top Trending"
+      },
+      {
+        "name": "Autumn Collection"
+      },
+      {
+        "name": "Back in Stock"
+      },
+      {
+        "name": "Bikini Tops"
+      },
+      {
+        "name": "Bikini Bottoms"
+      }
+    ]
+  },
+  {
+    "heading": "Newsletter",
+    "content":
+    [
+      {
+        "name": "Get 15% off your first purchaxse! Plus,<br/> be the first to know about sales, new<br/> product launches!"
+      }
+    ],
+    "input": true,
+    "icon": true
+
+  }
+
+]
