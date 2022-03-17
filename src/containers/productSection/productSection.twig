@@ -1,0 +1,14 @@
+{% import "../../shared/card/card.twig" as card %}
+{% import "../../shared/category/category.twig" as category %}
+<section class="page-section">
+  <div class="container">
+  <h3>New Arrivals</h3>
+    <div class="row">
+      {% for item in productSection.product %}
+        <div class="col-lg-3">
+          {{card.render(item)}}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

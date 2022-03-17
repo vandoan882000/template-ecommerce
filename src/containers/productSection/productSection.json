@@ -1,0 +1,45 @@
+{
+  "product": [
+    {
+      "name" :"Abc Shoulder Bag",
+      "srcImg": "../../img/product1.png",
+      "cost": "$25.00"
+    },
+    {
+      "name" :"Abc Shoulder Bag",
+      "srcImg": "../../img/product2.png",
+      "cost": "$25.00"
+    },
+    {
+      "name" :"Abc Shoulder Bag",
+      "srcImg": "../../img/product3.png",
+      "cost": "$25.00"
+    },
+    {
+      "name" :"Abc Shoulder Bag",
+      "srcImg": "../../img/product4.png",
+      "cost": "$25.00"
+    },
+    {
+      "name" :"Abc Shoulder Bag",
+      "srcImg": "../../img/product5.png",
+      "cost": "$25.00"
+    },
+    {
+      "name" :"Abc Shoulder Bag",
+      "srcImg": "../../img/product6.png",
+      "cost": "$25.00"
+    },
+    {
+      "name" :"Abc Shoulder Bag",
+      "srcImg": "../../img/product7.png",
+      "cost": "$25.00"
+    },
+    {
+      "name" :"Abc Shoulder Bag",
+      "srcImg": "../../img/product8.png",
+      "cost": "$25.00"
+    }
+  ]
+
+}

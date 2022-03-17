@@ -1,0 +1,13 @@
+{% extends "./abstracts/layout.twig" %}
+{% import "./shared/banner/banner.twig" as banner %}
+{% import "./shared/card/card.twig" as card %}
+{% import "./shared/category/category.twig" as cate %}
+{% block body %}
+  {% include "./containers/menuSection/menuSection.twig" %}
+	{% include "./containers/bannerSection/bannerSection.twig" %}
+  {% include "./containers/categorySection/categorySection.twig" %}
+	{% include "./containers/productSection/productSection.twig" %}
+  {% include "./containers/bannerSection1/bannerSection1.twig" %}
+  {% include "./containers/bestSellerSection/bestSellerSection.twig" %}
+  {% include "./containers/bannerSection2/bannerSection2.twig" %}
+{% endblock %}

@@ -1,0 +1,15 @@
+{% import "../../shared/category/category.twig" as category %}
+
+<section class="page-section">
+  <div class="container">
+    <h2>Top Categories</h2>
+    <div class="row">
+      {% for item in categorySection.category %}
+        <div class="col-lg-3">
+        {{ category.render(item)}}
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>

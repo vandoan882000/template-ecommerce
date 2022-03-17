@@ -1,0 +1,37 @@
+{
+  "category": [
+    {
+      "name" :"Activewear",
+      "srcImg": "../../img/category1.png"
+    },
+    {
+      "name" :"Activewear",
+      "srcImg": "../../img/category2.png"
+    },
+    {
+      "name" :"Activewear",
+      "srcImg": "../../img/category3.png"
+    },
+    {
+      "name" :"Activewear",
+      "srcImg": "../../img/category4.png"
+    },
+    {
+      "name" :"Activewear",
+      "srcImg": "../../img/category5.png"
+    },
+    {
+      "name" :"Activewear",
+      "srcImg": "../../img/category6.png"
+    },
+    {
+      "name" :"Activewear",
+      "srcImg": "../../img/category7.png"
+    },
+    {
+      "name" :"Activewear",
+      "srcImg": "../../img/category8.png"
+    }
+  ]
+
+}

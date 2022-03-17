@@ -1,0 +1,31 @@
+{% macro render(product) %}
+  <div class="card">
+    <div class="card__img">
+      <img src={{product.srcImg}} alt="product">
+      <div class="card__add">
+        <a href="#" onclick="hienLink()">ADD TO CART</a>
+      </div>
+      <div class="card__status">
+        <div class="card__icon-bg">
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="card__icon-bg">
+          <i class="far fa-eye"></i>
+        </div>
+        <div class="card__icon-bg">
+          <i class="far fa-exchange"></i>
+        </div>
+      </div>
+    </div>
+    <div class="card__content">
+      <div class="card__band">Wiloke</div>
+      <h4 class="card__name">{{product.name}}</h4>
+      <div class="card__cost">{{product.cost}}</div>
+      <div class="card__color">
+        <div class="circle--red"></div>
+        <div class="circle--blue"></div>
+        <div class="circle--yellow"></div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}

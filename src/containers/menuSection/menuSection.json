@@ -1,0 +1,27 @@
+{
+  "menu1": {
+    "list": [
+      {
+        "name" :"LOGO",
+        "href": "#"
+      },
+      {
+        "name" :"GENTLEMAN",
+        "href": "#"
+      },
+      {
+        "name" :"Belle Doll",
+        "href": "#"
+      },
+      {
+        "name" :"Amber.",
+        "href": "#"
+      },
+      {
+        "name" :"GLASSY",
+        "href": "#"
+      }
+    ]
+  }
+
+}
