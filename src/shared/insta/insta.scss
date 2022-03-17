@@ -1,7 +1,12 @@
 .insta {
-  width: 272px;
   height: 314px;
   margin-bottom: 80px;
+  cursor: pointer;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.insta__img {
+  width: 100%;
 }
 .insta__description {
   font-weight: 400;

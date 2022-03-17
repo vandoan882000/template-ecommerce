@@ -1,20 +1,13 @@
 {% import "../../shared/gift/gift.twig" as gift %}
 
 <section class="page-section" style="background-color: #FFE7D4;">
-  <div class="container">
-    <div class="row" >
-      <div class="col-lg-3">
-        {{gift.render()}}
-      </div>
-      <div class="col-lg-3">
-        {{gift.render()}}
-      </div>
-      <div class="col-lg-3">
-        {{gift.render()}}
-      </div>
-      <div class="col-lg-3">
-        {{gift.render()}}
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="row">
+			{% for item in giftSection %}
+				<div class="col-lg-3">
+					{{gift.render(item)}}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 </section>
