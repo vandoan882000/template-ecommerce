@@ -10,6 +10,7 @@
       }
     ],
     "color": "white",
-    "direction": "left"
+    "direction": "left",
+    "stickey": "ARRIVED!"
   }
 }

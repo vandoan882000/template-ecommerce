@@ -7,17 +7,24 @@
 				{{banner.description}}
 			</p>
 			<div class="btn__container">
-        {% for item in banner.button %}
-          {% if banner.color == "black" %}
-            <button class="btn btn__primary">{{item.name}}</button>
-          {% endif %}
-          {% if banner.color == "white" %}
-            <button class="btn btn__secondary">{{item.name}}</button>
-          {% endif %}
-        {% endfor %}
-
+				{% for item in banner.button %}
+					{% if banner.color == "black" %}
+						<button class="btn btn__primary">{{item.name}}</button>
+					{% endif %}
+					{% if banner.color == "white" %}
+						<button class="btn btn__secondary">{{item.name}}</button>
+					{% endif %}
+				{% endfor %}
 			</div>
 		</div>
-    <img src={{banner.img}} alt="">
+		{% if banner.stickey %}
+			<div class="banner__stickey">
+        <div class="banner__rectangle">{{banner.stickey}}</div>
+        <div class="banner__triangle--left"></div>
+        <div class="banner__triangle--right"></div>
+      </div>
+
+		{% endif %}
+		<img src={{banner.img}} alt="">
 	</div>
 {% endmacro %}
