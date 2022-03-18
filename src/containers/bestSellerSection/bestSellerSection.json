@@ -2,6 +2,7 @@
   "product": [
     {
       "name" :"Abc Shoulder Bag",
+      "type" : "best seller",
       "srcImg": "../../img/product1.png",
       "cost": "$25.00",
       "costBefore": "$35.00",
@@ -19,6 +20,7 @@
     },
     {
       "name" :"Quilted Shoulder Bag",
+      "type" : "best seller",
       "srcImg": "../../img/product2.png",
       "cost": "$25.00",
       "costBefore": "$35.00",
@@ -39,6 +41,7 @@
     },
     {
       "name" :"Denim Jacket",
+      "type" : "new",
       "srcImg": "../../img/product3.png",
       "cost": "$30.00",
       "color": [
@@ -58,6 +61,7 @@
     },
     {
       "name" :"Wool-blend Jacket",
+      "type" : "new",
       "srcImg": "../../img/product4.png",
       "cost": "$25.00",
       "costBefore": "$35.00",
