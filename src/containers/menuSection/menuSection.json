@@ -1,6 +1,6 @@
 [
   {
-    "name" : "menu1",
+    "name" : "menu",
     "bgColor": "#000000",
     "color": "#FFFFFF",
     "list": [
@@ -28,7 +28,7 @@
     "type": "option"
   },
   {
-    "name" : "menu2",
+    "name" : "menu",
     "bgColor" : "#FFFFFF",
     "color": "#000000",
     "list": [

@@ -1,7 +1,7 @@
 {% macro render(data) %}
+  <!--Gift-->
   <div class="gift">
-    {# <i class="fas fa-gift"></i> #}
-    <i class="fas {{data.icon}}"></i>
-    <h2>{{data.name}}</h2>
+    <a href="#"><i class="fas {{data.icon}}"></i>{{data.name}}</a>
   </div>
+  <!--End / Gift-->
 {% endmacro %}

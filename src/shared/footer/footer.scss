@@ -1,10 +1,11 @@
 footer {
-  height: 435px;
-  background-color: black;
+  min-height: 435px;
+  background-color: var(--color-dark);
   padding: 60px;
+  font-family: var(--font-secondary);
 }
 footer {
-  color: white;
+  color: var(--color-light);
 }
 .footer__title {
   font-family: 'Mali';
@@ -15,13 +16,10 @@ footer {
 }
 .footer__heading {
   font-weight: 700;
-  line-height: 16px;
   padding-bottom: 20px;
   text-transform: uppercase;
 }
 .footer__content {
-  font-weight: 400;
-  line-height: 16px;
   opacity: 0.7;
   padding-bottom: 20px;
 }
@@ -31,13 +29,12 @@ footer {
   display: flex;
   width: 236px;
   height: 40px;
-  color: black;
+  color: var(--color-dark);
   border: none;
 }
 .footer__input input {
   width: 162px;
   height: 38px;
-  line-height: 36px;
   border: none;
   outline: none;
   display: inline-block;
@@ -48,7 +45,7 @@ footer {
   font-size: 12px;
   font-weight: 600;
   background-color: #3540DF;
-  color: #FFFFFF;
+  color: var(--color-light);
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -74,5 +71,5 @@ footer {
   font-size: 18px;
 }
 .footer__about [class^="fa"]:hover {
-  color: #ffffff;
+  color: var(--color-light);
 }

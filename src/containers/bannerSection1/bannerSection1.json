@@ -1,6 +1,7 @@
 {
   "banner1": {
     "title" : "Set Your Style",
+    "type" : "primary",
     "heading" : "INSTILEY",
     "description" : "Neque porro quisquam est qui dolorem ipsum quia dolor <br/>sit amet consectetur adipisci velit sed quia non numquam <br/>eius modi tempora incidunto.",
     "img" : "../../img/background-img1.png",

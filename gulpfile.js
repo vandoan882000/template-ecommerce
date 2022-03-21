@@ -138,6 +138,9 @@ function watchFiles() {
     gulp
       .watch(`${config.input}/**/*.twig`, compileTwig)
       .on("change", browserSync.reload);
+    gulp
+      .watch(`${config.input}/**/*.json`, compileTwig)
+      .on("change", browserSync.reload);
   } catch (err) {
     console.log(err);
   }

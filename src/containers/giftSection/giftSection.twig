@@ -1,13 +1,13 @@
 {% import "../../shared/gift/gift.twig" as gift %}
 
-<section class="page-section" style="background-color: #FFE7D4;">
+<nav class="page-section" style="background-color: #FFE7D4;">
 	<div class="container">
 		<div class="row">
 			{% for item in giftSection %}
-				<div class="col-lg-3">
+				<div class="col-xs-12 col-sm-6 col-md-16 col-lg-3">
 					{{gift.render(item)}}
 				</div>
 			{% endfor %}
 		</div>
 	</div>
-</section>
+</nav>

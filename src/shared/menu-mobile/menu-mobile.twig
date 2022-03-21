@@ -1,0 +1,46 @@
+{% macro render(menu) %}
+  <!--MenuMobile-->
+	{% if menu.type == 'option'%}
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<ul class="{{menu.name}}-mobile">
+				{% for item in menu.list %}
+					<li class="menu-mobile__list">
+						<a href={{item.href}} class="menu-mobile__link--primary">{{item.name}}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<div class="menu-mobile__option">
+				<i class="far fa-user"></i>
+				<i class="fa-solid fa-right-left"></i>
+				<i class="fa-regular fa-heart"></i>
+				<i class="fas fa-shopping-cart"></i>
+			</div>
+		</div>
+	{% endif %}
+	{% if menu.type == 'search'%}
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<ul class="{{menu.name}}-mobile">
+				{% for item in menu.list %}
+					<li class="menu-mobile__list">
+						<a href={{item.href}} class="menu-mobile__link--secondary" style="color: {{menu.color}}">{{item.name}}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<div class="menu-mobile__search-container">
+				<div class="menu-mobile__search">
+					<input placeholder="Search" type="text">
+					<div class="btn-search">
+						<i class="fas fa-search"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+  <!--End / MenuMobile-->
+
+
+{% endmacro %}

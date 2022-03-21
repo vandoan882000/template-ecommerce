@@ -1,18 +1,41 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
+:root {
+  --color-primary: #2C36DC;
+  --color-secondary: #2AB885;
+  --color-tertiary: #9540f7;
+  --color-quaternary: #ff6565;
+  --color-quinary: #FBC473;
+  --color-light: #ffffff;
+  --color-gray1: #F8F8FC;
+  --color-gray2: #f2f2f7;
+  --color-gray3: #DEDEE9;
+  --color-gray4: #D2D2E2;
+  --color-gray5: #9E9ECC;
+  --color-gray6: #6D6D9C;
+  --color-gray7: #494880;
+  --color-gray8: #26256C;
+  --color-gray9: #17174F;
+  --color-dark: #000000;
+  --font-primary: "Jost", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
+  --font-tertiary: 'Mali', cursive;
+  --font-quaternary: "Poppins", sans-serif;
+  //Tertiary(3) quaternary (4), quinary (5), senary (6), septenary (7), octonary (8), nonary (9), and denary (10).
+}
+
 body {
-  color: black;
-  font-family: "Jost",sans-serif;
+  // background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-primary);
   font-size: 14px;
   line-height: 1.45;
   font-weight: 400;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-h1,h2,h3,h4,h5 {
-  color:black;
-}
+
 img {
   max-width: 100%;
   height: auto;
@@ -21,4 +44,5 @@ img {
 }
 a {
   text-decoration: none;
+  color: var(--color-dark);
 }

@@ -1,10 +1,19 @@
 {% import "../../shared/menu/menu.twig" as menu %}
-
-<nav class="nav">
+{% import "../../shared/menu-mobile/menu-mobile.twig" as menuMobile %}
+<nav class="nav" id="nav">
   <div class="container" >
     {% for item in menuSection %}
       <div class="row" style="background-color: {{item.bgColor}}">
         {{menu.render(item)}}
+      </div>
+    {% endfor %}
+  </div>
+</nav>
+<nav class="nav-mobile" id="nav-mobile">
+  <div class="container" >
+    {% for item in menuSection %}
+      <div class="row" style="background-color: {{item.bgColor}}">
+        {{menuMobile.render(item)}}
       </div>
     {% endfor %}
   </div>
