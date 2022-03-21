@@ -1,0 +1,23 @@
+{% import "../../shared/card/card.twig" as card %}
+{% import "../../shared/category/category.twig" as category %}
+{% import "../../shared/productBox/productBox.twig" as productBox %}
+<section class="page-section--small" style="text-align: left;">
+  <div class="container">
+  <p>Home > Product</p>
+  <p>View as : <i class="far fa-list-alt"></i> <i class="fas fa-th"></i></p>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="row">
+          {% for item in productSection.product %}
+            <div class="col-lg-4">
+              {{card.render(item)}}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-lg-4">
+        {{productBox.render()}}
+      </div>
+    </div>
+  </div>
+</section>

@@ -4,23 +4,19 @@
   padding: 15px 0px 15px 0px;
   list-style: none;
 }
+.menu-mobile--1 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  list-style: none;
+}
 
-.menu-mobile__list {
+.menu-mobile .menu-mobile__list {
   width: 100%;
 }
-.menu-mobile1 .menu-mobile__list:nth-last-child(1){
-  border: none;
-}
-.menu-mobile__link--primary {
-  display: block;
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 17px;
-  cursor: pointer;
-  color: var(--color-light);
-  text-align: center;
-}
+
 .menu-mobile__link--secondary {
   display: block;
   width: 100%;
@@ -31,19 +27,6 @@
   line-height: 19px;
   cursor: pointer;
   text-align: center;
-}
-.menu-mobile__option {
-  height: 100%;
-  display: flex;
-  padding: 15px 0;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-light);
-}
-.menu-mobile__option [class^="fa"] {
-  margin-left: 10px;
-  margin-right: 10px;
-  cursor: pointer;
 }
 
 .menu-mobile__search-container {
@@ -78,7 +61,7 @@
   display: inline-block;
   position: relative;
 }
-.fa-search {
+.btn-search .fa-search {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -96,3 +79,49 @@
   z-index: 1000;
   background-color: var(--color-light);
 }
+
+
+.menu-mobile--1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  list-style: none;
+  width: 600px;
+  padding-bottom: 20px;
+}
+.menu-mobile--1 .menu-mobile__list {
+  display: inline-block;
+  border-right: 1px solid var(--color-light);
+}
+.menu-mobile--1 .menu-mobile__list:nth-last-child(1){
+  border: none;
+}
+.menu-mobile__link--primary {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 17px;
+  cursor: pointer;
+  color: var(--color-light);
+  white-space: nowrap;
+}
+.menu-mobile__option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-light);
+}
+.menu-mobile__option a {
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: var(--color-light);
+}
+
+.menu-mobile__container-overflow {
+  overflow-x: auto;
+}
+

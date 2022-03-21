@@ -34,15 +34,15 @@
     "list": [
       {
         "name" :"HOME",
-        "href": "#"
+        "href": "/"
       },
       {
         "name" :"PRODUCT",
-        "href": "#"
+        "href": "/product.html"
       },
       {
         "name" :"BLOG",
-        "href": "#"
+        "href": "/blog.html"
       },
       {
         "name" :"TREND",

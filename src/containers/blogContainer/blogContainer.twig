@@ -1,0 +1,19 @@
+{% import "../../shared/blog/blogItem.twig" as blogItem %}
+{% import "../../shared/productBox/productBox.twig" as productBox %}
+<section class="page-section--small" style="text-align: left;">
+  <p>Home > Blog</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        {{blogItem.render()}}
+        {{blogItem.render()}}
+        {{blogItem.render()}}
+        {{blogItem.render()}}
+        {{blogItem.render()}}
+      </div>
+      <div class="col-lg-4">
+        {{productBox.render()}}
+      </div>
+    </div>
+  </div>
+</section>

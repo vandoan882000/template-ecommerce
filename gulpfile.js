@@ -60,7 +60,7 @@ function getJSON() {
   const files = glob.sync(`${config.input}/**/*.json`);
   const contents = files.reduce((obj, file) => {
     const fileName = file.replace(/.*\/|\.json/g, "");
-    const content = JSON.parse(fs.readFileSync(file).toString());
+    const content = JSON.parse(fs.readFileSync(file).toString() || '{}');
     return {
       ...obj,
       [fileName]: content,

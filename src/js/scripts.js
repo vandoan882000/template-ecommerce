@@ -5,8 +5,7 @@ function createMenu({
    * @type {HTMLElement}
    */
   const navEl = document.querySelector(".nav-mobile");
-  const menus = document.querySelectorAll(".menu-mobile");
-  const menuOption = document.querySelector(".menu-mobile__option");
+  const menu = document.querySelector(".menu-mobile");
   const menuSearch = document.querySelector(".menu-mobile__search-container");
   /**
    * @type {HTMLUListElement}
@@ -18,19 +17,13 @@ function createMenu({
   function handleButtonClick() {
     const iconMenu = buttonShowMenu.children[0];
     if( iconMenu.className == "fa-solid fa-bars") {
-      for( menu of menus) {
-        menu.style.display = "block";
-      }
-      menuOption.style.display = "flex";
+      menu.style.display = "block";
       menuSearch.style.display = "flex";
       iconMenu.className = "fas fa-times"
     }
     else
     {
-      for( menu of menus) {
-        menu.style.display = "none";
-      }
-      menuOption.style.display = "none";
+      menu.style.display = "none";
       menuSearch.style.display = "none";
       iconMenu.className = "fa-solid fa-bars";
     }
@@ -55,7 +48,7 @@ createMenu({
     buttonShowMenu.className = "btn-show";
     buttonShowMenu.id = "btn-show";
     const iconBar = document.createElement("i");
-    iconBar.className = "fas fa-times"
+    iconBar.className = "fa-solid fa-bars"
     buttonShowMenu.appendChild(iconBar);
     return buttonShowMenu;
   },
@@ -68,52 +61,49 @@ function sizeScreen() {
    * @type {HTMLElement}
    */
   const navEl = document.querySelector(".nav");
-  const menus = document.querySelectorAll(".menu-mobile");
+  const navElMobile = document.querySelector(".nav-mobile");
+  const menu1 = document.querySelector(".menu-mobile--1");
+  const menu2 = document.querySelector(".menu-mobile");
   const buttonMenu = document.getElementById("btn-show");
-  const menuOption = document.querySelector(".menu-mobile__option");
   const menuSearch = document.querySelector(".menu-mobile__search-container");
   function initMenu() {
     if(window.innerWidth < 1000)
     {
       buttonMenu.style.display = "block";
-      for(menu of menus) {
-        menu.style.display = "block";
-      }
-      menuOption.style.display = "flex";
-      menuSearch.style.display = "flex";
+      menu1.style.display = "flex";
+      menu2.style.display = "none";
+      menuSearch.style.display = "none";
       navEl.style.display = "none"
+      navElMobile.style.display = "block";
     }
     else
     {
       buttonMenu.style.display = "none";
-      for(menu of menus) {
-        menu.style.display = "none";
-      }
-      menuOption.style.display = "none";
+      menu1.style.display = "none";
+      menu2.style.display = "none";
       menuSearch.style.display = "none";
       navEl.style.display = "block";
+      navElMobile.style.display = "none"
     }
   }
   function resizeScreen(){
     if(window.innerWidth < 1000)
     {
       buttonMenu.style.display = "block";
-      for(menu of menus) {
-        menu.style.display = "block";
-      }
-      menuOption.style.display = "flex";
-      menuSearch.style.display = "flex";
+      menu1.style.display = "flex";
+      menu2.style.display = "none";
+      menuSearch.style.display = "none";
       navEl.style.display = "none"
+      navElMobile.style.display = "block";
     }
     else
     {
       buttonMenu.style.display = "none";
-      for(menu of menus) {
-        menu.style.display = "none";
-      }
-      menuOption.style.display = "none";
+      menu1.style.display = "none";
+      menu2.style.display = "none";
       menuSearch.style.display = "none";
       navEl.style.display = "block"
+      navElMobile.style.display = "none"
     }
   }
   function init() {
@@ -125,3 +115,5 @@ function sizeScreen() {
 }
 
 sizeScreen();
+
+

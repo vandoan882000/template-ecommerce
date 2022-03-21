@@ -46,10 +46,11 @@
   align-items: center;
   color: var(--color-light);
 }
-.menu__option [class^="fa"] {
+.menu__option a {
   margin-left: 10px;
   margin-right: 10px;
   cursor: pointer;
+  color: var(--color-light);
 }
 
 .menu__search-container {
@@ -83,7 +84,7 @@
   display: inline-block;
   position: relative;
 }
-.fa-search {
+.btn-search .fa-search {
   position: absolute;
   top: 50%;
   left: 50%;
