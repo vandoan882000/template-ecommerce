@@ -1,7 +1,7 @@
 {% macro render(menu) %}
   <!--Menu-->
 	{% if menu.type == 'option'%}
-		<div class="col-lg-8">
+		<div class="col-md-8 col-lg-8">
 			<ul class="{{menu.name}} {{menu.name}}--1">
 				{% for item in menu.list %}
 					<li class="menu__list">
@@ -10,7 +10,7 @@
 				{% endfor %}
 			</ul>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-md-4 col-lg-4">
 			<div class="menu__option">
 				<i class="far fa-user"></i>
 				<i class="fa-solid fa-right-left"></i>
@@ -20,7 +20,7 @@
 		</div>
 	{% endif %}
 	{% if menu.type == 'search'%}
-		<div class="col-lg-8">
+		<div class="col-md-8 col-lg-8">
 			<ul class="{{menu.name}} {{menu.name}}--2">
 				{% for item in menu.list %}
 					<li class="menu__list">
@@ -29,7 +29,7 @@
 				{% endfor %}
 			</ul>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-md-4 col-lg-4">
 			<div class="menu__search-container">
 				<div class="menu__search">
 					<input placeholder="Search" type="text">

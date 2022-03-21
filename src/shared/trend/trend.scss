@@ -35,3 +35,8 @@
   top: 20%;
   right: 10%;
 }
+@media (max-width: 500px) {
+  [class^="trend__content"] {
+    font-size: 30px;
+  }
+}
