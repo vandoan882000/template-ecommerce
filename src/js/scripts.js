@@ -55,7 +55,7 @@ createMenu({
     buttonShowMenu.className = "btn-show";
     buttonShowMenu.id = "btn-show";
     const iconBar = document.createElement("i");
-    iconBar.className = "fa-solid fa-bars"
+    iconBar.className = "fas fa-times"
     buttonShowMenu.appendChild(iconBar);
     return buttonShowMenu;
   },
@@ -77,10 +77,10 @@ function sizeScreen() {
     {
       buttonMenu.style.display = "block";
       for(menu of menus) {
-        menu.style.display = "none";
+        menu.style.display = "block";
       }
-      menuOption.style.display = "none";
-      menuSearch.style.display = "none";
+      menuOption.style.display = "flex";
+      menuSearch.style.display = "flex";
       navEl.style.display = "none"
     }
     else
@@ -99,10 +99,10 @@ function sizeScreen() {
     {
       buttonMenu.style.display = "block";
       for(menu of menus) {
-        menu.style.display = "none";
+        menu.style.display = "block";
       }
-      menuOption.style.display = "none";
-      menuSearch.style.display = "none";
+      menuOption.style.display = "flex";
+      menuSearch.style.display = "flex";
       navEl.style.display = "none"
     }
     else
