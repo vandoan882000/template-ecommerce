@@ -117,3 +117,72 @@ function sizeScreen() {
 sizeScreen();
 
 
+function reverseNumber( number ) {
+  if(Number(number) === number) {
+    const num = number + '';
+    return num.split('').reverse().join('');
+  }
+  else {
+    console.log("Khong phai so");
+  }
+
+}
+console.log(reverseNumber(123));
+
+function generateString( string ) {
+  let s = [];
+  for(let i = 0; i < string.length; i++) {
+    for(let j = i + 1; j < string.length; j++) {
+
+    }
+  }
+}
+
+// function sortString( string ) {
+//   const s = string.split('');
+//   return s.sort().join('');
+// }
+function sortString( string ) {
+  const s = string.split('');
+  for(let i = 0;i < s.length; i++) {
+    for(let j = i + 1; j < s.length; j++) {
+      let temp ;
+      if(s[i] > s[j]) {
+        temp = s[i];
+        s[i] = s[j];
+        s[j] = temp;
+      }
+    }
+  }
+  return s.join('');
+}
+console.log(sortString("fdcbea"));
+
+function upperCaseStr( str ) {
+  const s = str.split(' ');
+  for(let i = 0; i < s.length; i++) {
+    let temp = s[i].split('');
+    temp[0] = temp[0].toUpperCase();
+    s[i] = temp.join('');
+  }
+  return s.join(' ');
+}
+console.log(upperCaseStr("abc def ghi"));
+
+function findLength( str ) {
+  const s = str.split(' ');
+  let max = s[0];
+  for(let i = 1; i < s.length; i++) {
+    if(s[i].length > max.length) {
+      max = s[i];
+    }
+  }
+  return max;
+}
+console.log(findLength("Web Development Tutorial"));
+function handleInputValue(event) {
+  console.log(event.target.value);
+}
+
+const inputEl = document.querySelector("input");
+inputEl.addEventListener("change", handleInputValue)

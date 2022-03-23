@@ -1,82 +1,107 @@
 {% macro render(data) %}
-  <!--Product Box-->
-  <div class="product-box">
-    <div class="product-box__search">
-      <h2>Search</h2>
-      <div class="product-box__box__search">
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Search">
-      </div>
-    </div>
-    <div class="product-box__refine">
-      <h2>Refine By</h2>
-      <div class="product-box__box-refine">
-        Yellow
-        <i class="fas fa-times"></i>
-      </div>
-      <div class="product-box__box-refine">
-        Hat
-        <i class="fas fa-times"></i>
-      </div>
-      <div class="product-box__box-refine">
-        XS
-        <i class="fas fa-times"></i>
-      </div>
-    </div>
-    <div class="product-box__category">
-      <h2>Categories</h2>
-      <ul>
-        <li><a href="#">Áo</a></li>
-        <li><a href="#">Áo</a></li>
-        <li><a href="#">Áo</a></li>
-        <li><a href="#">Áo</a></li>
-        <li><a href="#">Áo</a></li>
-      </ul>
-    </div>
-    <div class="product-box__color">
-      <h2>Màu sắc</h2>
-      <div class="circle--yellow"></div>
-      <div class="circle--blue"></div>
-      <div class="circle--violet"></div>
-    </div>
-    <div class="product-box__size">
-      <h2>Size</h2>
-      <div class="product-box__content-size">
-        <div class="size">XS</div>
-        <div class="size">S</div>
-        <div class="size">M</div>
-        <div class="size">L</div>
-        <div class="size">XL</div>
-      </div>
-    </div>
-    <div class="product-box__filter">
-      <h2>Filter</h2>
-      <input type="range" multiple min="0" step="1" max="10" data-values="1 9">
-    </div>
-    <div class="product-box__brand">
-      <h2>Brand</h2>
-      <ul>
-        <li><a href="#">Áo</a></li>
-        <li><a href="#">Áo</a></li>
-        <li><a href="#">Áo</a></li>
-        <li><a href="#">Áo</a></li>
-        <li><a href="#">Áo</a></li>
-      </ul>
-    </div>
-    <div class="product-box__availability">
-      <h2>Availability</h2>
-      <ul>
-        <li><a href="#">In stock</a></li>
-        <li><a href="#">Out of stosck</a></li>
-      </ul>
-    </div>
-    <div class="product-box__tag">
-      <h2>Tags</h2>
-      <div class="product-box__box-tag">Design</div>
-      <div class="product-box__box-tag">Save</div>
-      <div class="product-box__box-tag">Simple</div>
-      <div class="product-box__box-tag">Stock</div>
-    </div>
-  </div>
-  <!--End / Product Box-->
+	<!--Product Box-->
+	<div class="product-box">
+		{% for item in data %}
+			{% if item.type == "search" %}
+				<div class="product-box__search">
+					<h2>Search</h2>
+					<div class="product-box__box__search">
+						<i class="fas fa-search"></i>
+						<input type="text" placeholder="Search">
+					</div>
+				</div>
+			{% endif %}
+			{% if item.type == "refine" %}
+				<div class="product-box__refine">
+					<h2>Refine By</h2>
+					{% for item in item.item %}
+						<div class="product-box__box-refine">
+							{{item.name}}
+							<i class="fas fa-times"></i>
+						</div>
+					{% endfor %}
+          <a href="#">Clear All</a>
+				</div>
+			{% endif %}
+			{% if item.type == "category" %}
+				<div class="product-box__category">
+					<h2>Categories</h2>
+					<ul>
+            {% for item in item.item %}
+              <li><a href="#">{{item.name}}</a></li>
+            {% endfor %}
+
+					</ul>
+				</div>
+			{% endif %}
+			{% if item.type == "color" %}
+				<div class="product-box__color">
+					<h2>Màu sắc</h2>
+					<div class="circle--yellow"></div>
+					<div class="circle--blue"></div>
+					<div class="circle--violet"></div>
+				</div>
+			{% endif %}
+			{% if item.type == "size" %}
+				<div class="product-box__size">
+					<h2>Size</h2>
+					<div class="product-box__content-size">
+            {% for item in item.item %}
+              <div class="size">{{item.name}}</div>
+            {% endfor %}
+					</div>
+				</div>
+			{% endif %}
+			{% if item.type == "filter" %}
+				<div class="product-box__filter">
+					<h2>Filter</h2>
+					<input type="range" multiple min="0" step="1" max="10" data-values="1 9">
+				</div>
+			{% endif %}
+			{% if item.type == "availability" %}
+				<div class="product-box__availability">
+					<h2>Availability</h2>
+					<ul>
+            {% for item in item.item %}
+              <li><a href="#">{{item.name}}</a></li>
+            {% endfor %}
+					</ul>
+				</div>
+			{% endif %}
+			{% if item.type == "tag" %}
+				<div class="product-box__tag">
+					<h2>Tags</h2>
+          {% for item in item.item %}
+            <div class="product-box__box-tag">{{item.name}}</div>
+          {% endfor %}
+				</div>
+			{% endif %}
+      {% if item.type == "popular-post" %}
+				<div class="product-box__popular-post">
+					<h2>Popular Post</h2>
+          {% for item in item.item %}
+            <div class="product-box__box-post">
+              <img src={{item.srcImg}} alt="">
+              <p>{{item.title}}</p>
+            </div>
+          {% endfor %}
+				</div>
+        <img src="../../img/post4.png" alt="">
+			{% endif %}
+      {% if item.type == "newsletter" %}
+				<div class="product-box__newsletter">
+					<h2>Newsletter Signup</h2>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint.</p>
+          <div class="product-box__box-newsletter">
+            <input type="text" placeholder="Your email">
+            <button>GET!</button>
+          </div>
+        </div>
+			{% endif %}
+
+		{% endfor %}
+
+
+	</div>
+	<!--End / Product Box-->
 {% endmacro %}

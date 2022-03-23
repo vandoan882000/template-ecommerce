@@ -1,18 +1,22 @@
 {% import "../../shared/blog/blogItem.twig" as blogItem %}
 {% import "../../shared/productBox/productBox.twig" as productBox %}
 <section class="page-section--small" style="text-align: left;">
-  <p>Home > Blog</p>
+  <p class="direct">Home > <a href="#">Blog</a></p>
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
-        {{blogItem.render()}}
-        {{blogItem.render()}}
-        {{blogItem.render()}}
-        {{blogItem.render()}}
-        {{blogItem.render()}}
+        {% for item in blogContainer.blog %}
+          {{blogItem.render(item)}}
+        {% endfor %}
+        <div class="page-number">
+          <a class="page-number__item--select" href="#">1</a>
+          <a class="page-number__item" href="#">2</a>
+          <a class="page-number__item" href="#">3</a>
+          <a class="page-number__item" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
       </div>
       <div class="col-lg-4">
-        {{productBox.render()}}
+        {{productBox.render(blogContainer.productBox)}}
       </div>
     </div>
   </div>

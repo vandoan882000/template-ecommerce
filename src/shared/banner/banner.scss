@@ -38,9 +38,13 @@
   display: flex;
   justify-content: flex-end;
 }
-// .banner--primary {
-
-// }
+.banner--product {
+  min-height: 275px;
+  color: var(--color-light);
+}
+.banner--product .banner__content{
+  padding: 5px 100px 0px 100px;
+}
 .banner--secondary {
   color: var(--color-light);
 }

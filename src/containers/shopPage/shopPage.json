@@ -1,0 +1,153 @@
+{
+  "productBox": [
+    {
+      "type": "search"
+    },
+    {
+      "type": "refine",
+      "item": [
+        {
+          "name": "Yellow"
+        },
+        {
+          "name": "Hat"
+        },
+        {
+          "name": "XS"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "item": [
+        {
+          "name": "Áo"
+        },
+        {
+          "name": "Váy"
+        },
+        {
+          "name": "Quần"
+        },
+        {
+          "name": "Bikini"
+        },
+        {
+          "name": "Phụ kiện"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "item": [
+        {
+          "name": "--1"
+        },
+        {
+          "name": "--2"
+        },
+        {
+          "name": "--2"
+        },
+        {
+          "name": "--2"
+        },
+        {
+          "name": "--2"
+        },
+        {
+          "name": "--2"
+        },
+        {
+          "name": "--2"
+        }
+      ]
+    },
+    {
+      "type": "size",
+      "item": [
+        {
+          "name": "XS"
+        },
+        {
+          "name": "S"
+        },
+        {
+          "name": "M"
+        },
+        {
+          "name": "L"
+        },
+        {
+          "name": "XL"
+        }
+      ]
+    },
+    {
+      "type": "brand",
+      "item": [
+        {
+          "name": "Gap"
+        },
+        {
+          "name": "Levi"
+        },
+        {
+          "name": "Polo"
+        },
+        {
+          "name": "Zara"
+        },
+        {
+          "name": "Gucci"
+        }
+      ]
+    },
+    {
+      "type": "availability",
+      "item": [
+        {
+          "name": "In stock"
+        },
+        {
+          "name": "Out of stosck"
+        }
+      ]
+    },
+    {
+      "type": "tag",
+      "item": [
+        {
+          "name": "Design"
+        },
+        {
+          "name": "Save"
+        },
+        {
+          "name": "Simple"
+        },
+        {
+          "name": "Stock"
+        },
+        {
+          "name": "Hãy tìm key đi"
+        }
+        ,
+        {
+          "name": "Item"
+        }
+        ,
+        {
+          "name": "Iec"
+        }
+        ,
+        {
+          "name": "Linh Tinh"
+        }
+      ]
+    }
+
+
+  ]
+
+}

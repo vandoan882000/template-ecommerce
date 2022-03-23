@@ -1,0 +1,83 @@
+{
+  "blog": [
+    {
+      "time" :"Jan 3, 2022",
+      "srcImg": "../../img/blog-img1.png",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales elementum enim sem sed lectus. Vivamus viverra diam congue tristique pellentesque. Proin efficitur est vel lectus ultrices rhoncus eu ut lacus. In gravida leo at justo lobortis, vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus, ex id efficitur ultrices, sapien mauris sodales..."
+    },
+    {
+      "time" :"Jan 20, 2022",
+      "srcImg": "../../img/blog-img2.png",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales elementum enim sem sed lectus. Vivamus viverra diam congue tristique pellentesque. Proin efficitur est vel lectus ultrices rhoncus eu ut lacus. In gravida leo at justo lobortis, vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus, ex id efficitur ultrices, sapien mauris sodales..."
+    },
+    {
+      "time" :"Jan 3, 2022",
+      "srcImg": "../../img/blog-img3.png",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales elementum enim sem sed lectus. Vivamus viverra diam congue tristique pellentesque. Proin efficitur est vel lectus ultrices rhoncus eu ut lacus. In gravida leo at justo lobortis, vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus, ex id efficitur ultrices, sapien mauris sodales..."
+    }
+
+  ],
+  "productBox": [
+    {
+      "type": "search"
+    },
+    {
+      "type": "popular-post",
+      "item": [
+        {
+          "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "srcImg": "../../img/post1.png"
+        },
+        {
+          "title": "Nisl natoque sed cursus purus. Pellentesque amet sollicitudin non ac adipiscing sed fac...",
+          "srcImg": "../../img/post2.png"
+        },
+        {
+          "title": "A arcu malesuada mauris consequat est cursus dignissim cras.",
+          "srcImg": "../../img/post3.png"
+        }
+      ]
+    },
+    {
+      "type": "tag",
+      "item": [
+        {
+          "name": "Design"
+        },
+        {
+          "name": "Save"
+        },
+        {
+          "name": "Simple"
+        },
+        {
+          "name": "Stock"
+        },
+        {
+          "name": "Hãy tìm key đi"
+        }
+        ,
+        {
+          "name": "Item"
+        }
+        ,
+        {
+          "name": "Iec"
+        }
+        ,
+        {
+          "name": "Linh Tinh"
+        }
+      ]
+    },
+    {
+      "type": "newsletter"
+    }
+
+
+  ]
+
+}

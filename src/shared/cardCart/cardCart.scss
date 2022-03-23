@@ -1,0 +1,19 @@
+.card-cart {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-gray4);
+}
+.card-cart__name {
+  @include autoDirection((
+    margin-left: 10px,
+    margin-right: 100px
+  ));
+  @include autoDirection((
+    border-left: 10px solid red,
+    transform: translateX(100px)
+  ));
+}
+.card-cart__quantity {
+  margin-left: 150px;
+  margin-right: 150px;
+}

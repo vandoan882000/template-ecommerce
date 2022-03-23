@@ -6,7 +6,7 @@
       "srcImg": "../../img/product1.png",
       "cost": "$25.00",
       "costBefore": "$35.00",
-      "option" : "ADD TO CART",
+      "option" : "Select Option",
       "color": [
         {
           "name":"yellow"
@@ -25,7 +25,7 @@
       "srcImg": "../../img/product2.png",
       "cost": "$25.00",
       "costBefore": "$35.00",
-      "option" : "ADD TO CART",
+      "option" : "Select Option",
       "color": [
         {
           "name":"yellow"
@@ -46,7 +46,7 @@
       "type" : "new",
       "srcImg": "../../img/product3.png",
       "cost": "$30.00",
-      "option" : "ADD TO CART",
+      "option" : "Select Option",
       "color": [
         {
           "name":"yellow"
@@ -68,7 +68,7 @@
       "srcImg": "../../img/product4.png",
       "cost": "$25.00",
       "costBefore": "$35.00",
-      "option" : "ADD TO CART",
+      "option" : "Select Option",
       "color": [
         {
           "name":"yellow"
@@ -85,12 +85,12 @@
       ]
     },
     {
-      "name" :"Check Bag",
-      "type" : "best seller",
-      "srcImg": "../../img/product5.png",
+      "name" :"Wool-blend Jacket",
+      "type" : "new",
+      "srcImg": "../../img/product4.png",
       "cost": "$25.00",
       "costBefore": "$35.00",
-      "option" : "ADD TO CART",
+      "option" : "Select Option",
       "color": [
         {
           "name":"yellow"
@@ -107,12 +107,12 @@
       ]
     },
     {
-      "name" :"Cotton bucket hat lorem Shoulder Bag",
-      "srcImg": "../../img/product6.png",
-      "type" : "best seller",
+      "name" :"Wool-blend Jacket",
+      "type" : "new",
+      "srcImg": "../../img/product4.png",
       "cost": "$25.00",
       "costBefore": "$35.00",
-      "option" : "ADD TO CART",
+      "option" : "Select Option",
       "color": [
         {
           "name":"yellow"
@@ -129,12 +129,12 @@
       ]
     },
     {
-      "name" :"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "type" : "sale",
-      "srcImg": "../../img/product7.png",
+      "name" :"Wool-blend Jacket",
+      "type" : "new",
+      "srcImg": "../../img/product4.png",
       "cost": "$25.00",
       "costBefore": "$35.00",
-      "option" : "ADD TO CART",
+      "option" : "Select Option",
       "color": [
         {
           "name":"yellow"
@@ -151,12 +151,100 @@
       ]
     },
     {
-      "name" :"Leather handbag",
-      "type" : "sale",
-      "srcImg": "../../img/product8.png",
+      "name" :"Wool-blend Jacket",
+      "type" : "new",
+      "srcImg": "../../img/product4.png",
       "cost": "$25.00",
       "costBefore": "$35.00",
-      "option" : "ADD TO CART",
+      "option" : "Select Option",
+      "color": [
+        {
+          "name":"yellow"
+        },
+        {
+          "name":"blue"
+        },
+        {
+          "name":"violet"
+        },
+        {
+          "name":"violet"
+        }
+      ]
+    },
+    {
+      "name" :"Wool-blend Jacket",
+      "type" : "new",
+      "srcImg": "../../img/product4.png",
+      "cost": "$25.00",
+      "costBefore": "$35.00",
+      "option" : "Select Option",
+      "color": [
+        {
+          "name":"yellow"
+        },
+        {
+          "name":"blue"
+        },
+        {
+          "name":"violet"
+        },
+        {
+          "name":"violet"
+        }
+      ]
+    },
+    {
+      "name" :"Wool-blend Jacket",
+      "type" : "new",
+      "srcImg": "../../img/product4.png",
+      "cost": "$25.00",
+      "costBefore": "$35.00",
+      "option" : "Select Option",
+      "color": [
+        {
+          "name":"yellow"
+        },
+        {
+          "name":"blue"
+        },
+        {
+          "name":"violet"
+        },
+        {
+          "name":"violet"
+        }
+      ]
+    },
+    {
+      "name" :"Wool-blend Jacket",
+      "type" : "new",
+      "srcImg": "../../img/product4.png",
+      "cost": "$25.00",
+      "costBefore": "$35.00",
+      "option" : "Select Option",
+      "color": [
+        {
+          "name":"yellow"
+        },
+        {
+          "name":"blue"
+        },
+        {
+          "name":"violet"
+        },
+        {
+          "name":"violet"
+        }
+      ]
+    },
+    {
+      "name" :"Wool-blend Jacket",
+      "type" : "new",
+      "srcImg": "../../img/product4.png",
+      "cost": "$25.00",
+      "costBefore": "$35.00",
+      "option" : "Select Option",
       "color": [
         {
           "name":"yellow"
