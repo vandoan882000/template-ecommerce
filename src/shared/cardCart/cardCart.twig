@@ -1,19 +1,11 @@
 {% macro render() %}
   <!--Card-Cart-->
-  <table>
-    <tr>
-      <th>Product</th>
-      <th>Price</th>
-      <th>Quantity</th>
-      <th>Total</th>
-    </tr>
-    <tr>
-      <td>
+
+    <tr class="card-cart">
+      <td class="card-cart__content">
         <img src="../../img/card-cart1.png" alt="">
-      </td>
-      <td>
         <div class="card-cart__name">
-          <h3 class="card-cart__title">Boxy Denim Jacket</h3>
+          <div class="card-cart__title">Boxy Denim Jacket</div>
           <p>Color: Light Blue</p>
           <a href="#">Remove</a>
         </div>
@@ -22,7 +14,7 @@
       <td>
         <div class="card-cart__quantity">
           <button class="card-cart__sub">-</button>
-          <input type="text" class="card-cart__value">
+          <input type="text" class="card-cart__value" value="1"/>
           <button class="card-cart__add">+</button>
         </div>
       </td>
@@ -30,13 +22,5 @@
         <p class="card-cart__total">$17.00</p>
       </td>
     </tr>
-  </table>
-	<div class="card-cart">
-
-
-
-
-
-	</div>
   <!--End / Card-Cart-->
 {% endmacro %}
