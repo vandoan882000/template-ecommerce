@@ -7,32 +7,40 @@ footer {
 footer {
   color: var(--color-light);
 }
-.footer__title {
+.nvd-footer__logo {
   font-family: 'Mali';
   font-weight: 700;
   font-size: 35px;
   line-height: 46px;
   padding-bottom: 20px;
 }
-.footer__heading {
+.nvd-footer-list {
   font-weight: 700;
-  padding-bottom: 20px;
-  text-transform: uppercase;
+  padding-bottom: 25px;
+  padding-left: 0;
+  list-style: none;
 }
-.footer__content {
+.nvd-footer-list__heading {
+  margin-bottom: 25px;
+}
+.nvd-footer-list__list {
+  padding-bottom: 20px;
+  color: var(--color-light);
+}
+.nvd-footer-list__link {
   opacity: 0.7;
-  padding-bottom: 20px;
+  color: var(--color-light);
+  font-weight: 400;
 }
 
-
-.footer__input {
+.nvd-footer__input {
   display: flex;
   width: 236px;
   height: 40px;
   color: var(--color-dark);
   border: none;
 }
-.footer__input input {
+.nvd-footer__input input {
   width: 162px;
   height: 38px;
   border: none;
@@ -58,24 +66,27 @@ footer {
   transform: translate(-50%,-50%);
 }
 
-.footer__about {
+.nvd-footer__about {
   height: 25px;
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
-.footer__about [class^="fa"] {
+.nvd-footer__about [class^="fa"] {
   margin-left: 10px;
   margin-right: 10px;
   color: #030C23;
   cursor: pointer;
   font-size: 18px;
 }
-.footer__about [class^="fa"]:hover {
+.nvd-footer__about [class^="fa"]:hover {
   color: var(--color-light);
 }
-.footer__copy-right {
+.nvd-footer__copy-right {
   text-align: center;
   opacity: 0.7;
   font-size: 12px;
+}
+.nvd-footer__logo {
+  color: var(--color-light);
 }

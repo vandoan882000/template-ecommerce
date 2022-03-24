@@ -46,3 +46,33 @@ a {
   text-decoration: none;
   color: var(--color-dark);
 }
+
+select {
+  appearance: auto;
+  padding: 0 12px;
+}
+
+textarea {
+  vertical-align: middle;
+  height: 100px;
+  padding: 10px 15px;
+  resize: vertical;
+}
+
+a, input, textarea, select {
+  outline: none !important;
+}
+
+input::-webkit-input-placeholder {
+  color: var(--color-gray6);
+}
+input::placeholder {
+  color: var(--color-gray6);
+}
+
+textarea::-webkit-input-placeholder {
+  color: var(--color-gray6);
+}
+textarea::placeholder {
+  color: var(--color-gray7);
+}

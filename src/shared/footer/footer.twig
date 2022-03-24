@@ -1,16 +1,24 @@
 {% macro render(data) %}
   <!--Footer-->
 	{% if data.title %}
-		<div class="footer__title">{{data.title}}</div>
+		<div class="nvd-footer__logo">{{data.title}}</div>
+    <ul class="nvd-footer-list">
+      <li class="nvd-footer-list__list"><a href="tel:+1234567890"" class="nvd-footer-list__link">Call Us: +123-456-7890</a></li>
+      <li class="nvd-footer-list__list"><a href="mailto:Info@example.com" class="nvd-footer-list__link">Info@example.com</a></a></li>
+      <li class="nvd-footer-list__list"> <a class="nvd-footer-list__link">Monday till Friday 10 to 6 EST</a></li>
+    </ul>
 	{% endif %}
 	{% if data.heading %}
-		<div class="footer__heading">{{data.heading}}</div>
+		<ul class="nvd-footer-list">
+      <h3 class="nvd-footer-list__heading">{{data.heading}}</h3>
+      {% for item in data.content %}
+        <li class="nvd-footer-list__list"><a class="nvd-footer-list__link" href="#">{{item.name}}</a></li>
+      {% endfor %}
+    </ul>
+
 	{% endif %}
-	{% for item in data.content %}
-		<div class="footer__content">{{item.name}}</div>
-	{% endfor %}
 	{% if data.input %}
-		<div class="footer__input">
+		<div class="nvd-footer__input">
 			<input placeholder="Email address" type="text">
 			<div class="btn-join">
 				<div>Join</div>
@@ -18,7 +26,7 @@
 		</div>
 	{% endif %}
   {% if data.icon %}
-    <div class="footer__about">
+    <div class="nvd-footer__about">
       <i class="fab fa-facebook-f"></i>
       <i class="fab fa-instagram"></i>
       <i class="fab fa-twitter"></i>

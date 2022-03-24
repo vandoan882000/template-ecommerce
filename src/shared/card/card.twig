@@ -1,55 +1,53 @@
 {% macro render(product) %}
-  <!--Card-->
+	<!--Card-->
 	<div class="card">
 		<div class="card__img">
 			<img src={{product.srcImg}} alt="product">
 			<div class="card__add">
 				<a href="#">{{product.option}}</a>
 			</div>
-			{% if product.type == "best seller" %}
-				<div class="card__best-seller">
-					<img src="../../img/product-status.png" alt="sale">
-					<p >BEST
-						<br/>
-						SELLER</p>
-				</div>
-			{% endif %}
-      {% if product.type == "new" %}
-				<div class="card__new">
-					<p>NEW</p>
-				</div>
-			{% endif %}
-      {% if product.type == "sale" %}
-				<div class="card__sale">
-					<p>SALE</p>
-				</div>
-			{% endif %}
+			<div class="card__state">
+				{% if product.type == "new" %}
+					<div class="card__new">
+						<p>New</p>
+					</div>
+				{% endif %}
+				{% if product.type == "sale" %}
+					<div class="card__sale">
+						<p>Sale</p>
+					</div>
+					<div class="card__new">
+						<p>New</p>
+					</div>
+				{% endif %}
+			</div>
+
 
 			<div class="card__status">
-				<div class="card__icon-bg">
+				<div data-tooltip="Add to wishlist" class="card__icon-bg">
 					<i class="far fa-heart"></i>
 				</div>
-				<div class="card__icon-bg--hidden">
+				<div data-tooltip="Quick view" class="card__icon-bg--hidden">
 					<i class="far fa-eye"></i>
 				</div>
-				<div class="card__icon-bg--hidden">
+				<div data-tooltip="Compare to other products" class="card__icon-bg--hidden">
 					<i class="fa-solid fa-right-left"></i>
 				</div>
 			</div>
 		</div>
 		<div class="card__content">
-			<div class="card__band">WILOKE</div>
-			<div class="card__name">{{product.name}}</div>
-			<div class="card__cost">
-				{{product.cost}}
+			<div class="card__brand">WILOKE</div>
+			<a href="#" class="card__name">{{product.name}}</a>
+			<a href="#" class="card__price">
+				<ins class="card__cost">{{product.cost}}</ins>
 				{% if product.costBefore %}
-					<span class="card__cost--before">{{product.costBefore}}</span>
+					<del class="card__cost--before">{{product.costBefore}}</del>
 				{% endif %}
-			</div>
+			</a>
 			<div class="card__color">
 				{% if product.color %}
 					{% for item in product.color %}
-						<div class="circle--{{item.name}}"></div>
+						<div class="circle{{item.name}}"></div>
 					{% endfor %}
 					{% if product.color.length >= 4 %}
 						<div class="circle--plus">+1</div>
@@ -58,5 +56,5 @@
 			</div>
 		</div>
 	</div>
-  <!--End / Card-->
+	<!--End / Card-->
 {% endmacro %}

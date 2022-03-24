@@ -17,7 +17,7 @@
 }
 .menu__list {
   display: inline-block;
-  border-right: 1px solid var(--color-light);
+  border-right: 0.5px solid var(--color-light);
 }
 .menu .menu__list:nth-last-child(1){
   border: none;
@@ -27,6 +27,7 @@
   padding-left: 15px;
   padding-right: 15px;
   font-size: 17px;
+  font-weight: 800;
   cursor: pointer;
   color: var(--color-light);
 }
@@ -45,6 +46,7 @@
   justify-content: flex-end;
   align-items: center;
   color: var(--color-light);
+  font-size: 20px;
 }
 .menu__option a {
   margin-left: 10px;

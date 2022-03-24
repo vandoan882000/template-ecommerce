@@ -1,6 +1,6 @@
 {% macro render(banner) %}
   <!--Banner-->
-	<div class="banner banner--{{banner.direction}}">
+	<div class="banner banner--{{banner.direction}}" style="color: {{banner.color}}">
 		<div class="banner__content">
 			<p class="banner__text">{{banner.title}}</p>
 			<div class="banner__title">INSTILEY</div>
@@ -26,7 +26,7 @@
       </div>
 
 		{% endif %}
-		<img src={{banner.img}} alt="">
+		{# <img src={{banner.img}} alt=""> #}
 	</div>
   <!--End / Banner-->
 {% endmacro %}

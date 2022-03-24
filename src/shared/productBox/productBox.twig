@@ -4,99 +4,117 @@
 		{% for item in data %}
 			{% if item.type == "search" %}
 				<div class="product-box__search">
-					<h2>Search</h2>
+					<h2 class="product-box__title">Search</h2>
 					<div class="product-box__box__search">
 						<i class="fas fa-search"></i>
-						<input type="text" placeholder="Search">
+						<input type="text" placeholder="Tìm kiếm">
 					</div>
 				</div>
 			{% endif %}
 			{% if item.type == "refine" %}
 				<div class="product-box__refine">
-					<h2>Refine By</h2>
-					{% for item in item.item %}
-						<div class="product-box__box-refine">
-							{{item.name}}
-							<i class="fas fa-times"></i>
-						</div>
-					{% endfor %}
-          <a href="#">Clear All</a>
+					<h2 class="product-box__title">Refine By</h2>
+					<div class="product-box__content">
+						{% for item in item.item %}
+							<div class="product-box__box-refine">
+								{{item.name}}
+								<i class="fas fa-times"></i>
+							</div>
+						{% endfor %}
+						<a href="#">Clear All</a>
+					</div>
+
 				</div>
 			{% endif %}
 			{% if item.type == "category" %}
 				<div class="product-box__category">
-					<h2>Categories</h2>
+					<h2 class="product-box__title">Categories</h2>
 					<ul>
-            {% for item in item.item %}
-              <li><a href="#">{{item.name}}</a></li>
-            {% endfor %}
+						{% for item in item.item %}
+							<li>
+								<a href="#">{{item.name}}</a>
+							</li>
+						{% endfor %}
 
 					</ul>
 				</div>
 			{% endif %}
 			{% if item.type == "color" %}
 				<div class="product-box__color">
-					<h2>Màu sắc</h2>
-					<div class="circle--yellow"></div>
-					<div class="circle--blue"></div>
-					<div class="circle--violet"></div>
+					<h2 class="product-box__title">Màu sắc</h2>
+					<div class="product-box__content">
+						<div class="circle__active--yellow"></div>
+						<div class="circle--blue"></div>
+						<div class="circle--violet"></div>
+					</div>
+
 				</div>
 			{% endif %}
 			{% if item.type == "size" %}
 				<div class="product-box__size">
-					<h2>Size</h2>
+					<h2 class="product-box__title">Size</h2>
 					<div class="product-box__content-size">
-            {% for item in item.item %}
-              <div class="size">{{item.name}}</div>
-            {% endfor %}
+						{% for item in item.item %}
+							<div class="size">{{item.name}}</div>
+						{% endfor %}
 					</div>
 				</div>
 			{% endif %}
 			{% if item.type == "filter" %}
 				<div class="product-box__filter">
-					<h2>Filter</h2>
+					<h2 class="product-box__title">Filter</h2>
 					<input type="range" multiple min="0" step="1" max="10" data-values="1 9">
 				</div>
 			{% endif %}
 			{% if item.type == "availability" %}
 				<div class="product-box__availability">
-					<h2>Availability</h2>
+					<h2 class="product-box__title">Availability</h2>
 					<ul>
-            {% for item in item.item %}
-              <li><a href="#">{{item.name}}</a></li>
-            {% endfor %}
+						{% for item in item.item %}
+							<li>
+								<a href="#">{{item.name}}</a>
+							</li>
+						{% endfor %}
 					</ul>
 				</div>
 			{% endif %}
 			{% if item.type == "tag" %}
 				<div class="product-box__tag">
-					<h2>Tags</h2>
-          {% for item in item.item %}
-            <div class="product-box__box-tag">{{item.name}}</div>
-          {% endfor %}
+					<h2 class="product-box__title">Tags</h2>
+					<div class="product-box__content">
+						{% for item in item.item %}
+							<div class="product-box__box-tag">{{item.name}}</div>
+						{% endfor %}
+					</div>
+
 				</div>
 			{% endif %}
-      {% if item.type == "popular-post" %}
+			{% if item.type == "popular-post" %}
 				<div class="product-box__popular-post">
-					<h2>Popular Post</h2>
-          {% for item in item.item %}
-            <div class="product-box__box-post">
-              <img src={{item.srcImg}} alt="">
-              <p>{{item.title}}</p>
-            </div>
-          {% endfor %}
+					<h2 class="product-box__title">Popular Post</h2>
+					<div class="product-box__content">
+						{% for item in item.item %}
+							<div class="product-box__box-post">
+								<img src={{item.srcImg}} alt="">
+								<p>{{item.title}}</p>
+							</div>
+						{% endfor %}
+					</div>
 				</div>
-        <img src="../../img/post4.png" alt="">
+				<img src="../../img/post4.png" alt="">
 			{% endif %}
-      {% if item.type == "newsletter" %}
+			{% if item.type == "newsletter" %}
 				<div class="product-box__newsletter">
-					<h2>Newsletter Signup</h2>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint.</p>
-          <div class="product-box__box-newsletter">
-            <input type="text" placeholder="Your email">
-            <button>GET!</button>
-          </div>
-        </div>
+					<h2 class="product-box__title">Newsletter Signup</h2>
+					<div class="product-box__content">
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint.</p>
+						<div class="product-box__box-newsletter">
+							<input type="text" placeholder="Your email">
+							<button>GET!</button>
+						</div>
+					</div>
+
+				</div>
 			{% endif %}
 
 		{% endfor %}

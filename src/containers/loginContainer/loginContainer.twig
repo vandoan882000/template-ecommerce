@@ -2,27 +2,34 @@
 {% import "../../shared/category/category.twig" as category %}
 {% import "../../shared/productBox/productBox.twig" as productBox %}
 <section class="page-section--small" style="text-align: left;">
-  <p>Home > Account</p>
-  <h3 style="text-align: center;">Login</h3>
-  <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing </p>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-5">
-        <div class="register">
-          <h4 >New Customer</h4>
-          <p>Sign up for early Sale access plus tailored <br/>new arrivals, trends and promotions. To opt<br/> out, click unsubscribe in our emails.</p>
-          <button class="btn__primary" style="width: 100%;margin: 0;">Register</button>
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <div class="sign-in">
-          <h3>Log In</h3>
-          <input type="mail" placeholder="Email"/>
-          <input type="text" placeholder="Password"/>
-          <a href="#" style="text-decoration: underline;">Forgot password?</p>
-          <button class="btn__primary" style="width: 100%;margin: 0;">Sign In</button>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="direct">Home >
+		<a href="#">Account</a>
+	</div>
+	<h3 class="login__title" style="text-align: center;">Login</h3>
+	<p class="login__description" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing
+	</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5">
+				<div class="register">
+					<div class="register__content">
+						<h4 class="register__title">New Customer</h4>
+						<p class="register__description">Sign up for early Sale access plus tailored
+							<br/>new arrivals, trends and promotions. To opt<br/>
+							out, click unsubscribe in our emails.</p>
+						<button class="btn__primary" style="width: 100%;margin: 0;">Register</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5">
+				<div class="sign-in">
+					<h3 class="sign-in__title">Log In</h3>
+					<input type="mail" placeholder="Email"/>
+					<input type="text" placeholder="Password"/>
+					<a href="#" style="text-decoration: underline;">Forgot password?</p>
+					<button class="btn__primary" style="width: 100%;margin: 0;">Sign In</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>

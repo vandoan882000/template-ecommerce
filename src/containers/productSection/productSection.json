@@ -9,13 +9,13 @@
       "option" : "ADD TO CART",
       "color": [
         {
-          "name":"yellow"
+          "name":"__active--yellow"
         },
         {
-          "name":"blue"
+          "name":"--blue"
         },
         {
-          "name":"violet"
+          "name":"--violet"
         }
       ]
     },
@@ -28,16 +28,16 @@
       "option" : "ADD TO CART",
       "color": [
         {
-          "name":"yellow"
+          "name":"__active--yellow"
         },
         {
-          "name":"blue"
+          "name":"--blue"
         },
         {
-          "name":"violet"
+          "name":"--violet"
         },
         {
-          "name":"violet"
+          "name":"--violet"
         }
       ]
     },
@@ -49,16 +49,13 @@
       "option" : "ADD TO CART",
       "color": [
         {
-          "name":"yellow"
+          "name":"__active--yellow"
         },
         {
-          "name":"blue"
+          "name":"--blue"
         },
         {
-          "name":"violet"
-        },
-        {
-          "name":"violet"
+          "name":"--violet"
         }
       ]
     },
@@ -71,16 +68,13 @@
       "option" : "ADD TO CART",
       "color": [
         {
-          "name":"yellow"
+          "name":"__active--yellow"
         },
         {
-          "name":"blue"
+          "name":"--blue"
         },
         {
-          "name":"violet"
-        },
-        {
-          "name":"violet"
+          "name":"--violet"
         }
       ]
     },
@@ -93,16 +87,13 @@
       "option" : "ADD TO CART",
       "color": [
         {
-          "name":"yellow"
+          "name":"__active--yellow"
         },
         {
-          "name":"blue"
+          "name":"--blue"
         },
         {
-          "name":"violet"
-        },
-        {
-          "name":"violet"
+          "name":"--violet"
         }
       ]
     },
@@ -115,16 +106,13 @@
       "option" : "ADD TO CART",
       "color": [
         {
-          "name":"yellow"
+          "name":"__active--yellow"
         },
         {
-          "name":"blue"
+          "name":"--blue"
         },
         {
-          "name":"violet"
-        },
-        {
-          "name":"violet"
+          "name":"--violet"
         }
       ]
     },
@@ -137,16 +125,13 @@
       "option" : "ADD TO CART",
       "color": [
         {
-          "name":"yellow"
+          "name":"__active--yellow"
         },
         {
-          "name":"blue"
+          "name":"--blue"
         },
         {
-          "name":"violet"
-        },
-        {
-          "name":"violet"
+          "name":"--violet"
         }
       ]
     },
@@ -159,16 +144,16 @@
       "option" : "ADD TO CART",
       "color": [
         {
-          "name":"yellow"
+          "name":"__active--yellow"
         },
         {
-          "name":"blue"
+          "name":"--blue"
         },
         {
-          "name":"violet"
+          "name":"--violet"
         },
         {
-          "name":"violet"
+          "name":"--violet"
         }
       ]
     }
